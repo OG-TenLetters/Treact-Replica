@@ -317,7 +317,7 @@ FEATURES
 .feature__img--wrapper {
     display: flex;
     padding: 20px;
-    border: 1 solid #e5e7eb;
+    border: 3 solid #bd5b23;
     border-radius: 500px;
 }
 
