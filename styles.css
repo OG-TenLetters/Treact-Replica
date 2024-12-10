@@ -335,7 +335,7 @@ FEATURES
     display: flex;
     padding: 20px;
     border: 3 solid #bd5b23;
-    border-radius: 500px;
+    border-radius: 9999px;
 }
 
 .feature__text {
@@ -383,6 +383,40 @@ QUALITY
 .quality__description,
 .quality__img--wrapper {
     width: 50%;
+}
+
+.steps__description {
+    padding: 32px 0 32px 64px;
+}
+
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+
+.step__number {
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight:500;
+}
+
+.step__description {
+    margin-left: 28px;
+}
+
+.step__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #243E63;
+    line-height: 1;
+}
+
+.step__para {
+    font-size: 14px;
+    font-weight: 500;
+    color: #718096;
 }
 
 
