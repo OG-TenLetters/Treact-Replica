@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
-    margin: none;
+    margin: 0;
     padding: 0;
     background-origin: border-box;
     font-family: "Inter", serif;
@@ -17,6 +17,7 @@ Elememts
 */
 
 a {
+    display: inline;
     text-decoration: none;
 }
 
@@ -58,7 +59,6 @@ GENERIC CLASSES
 }
 
 #landing {
-    display: flex;
     padding: 0 32px;
 }
 
@@ -110,16 +110,40 @@ nav {
 
 .nav__link {
     color: #243E63;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     margin: 0 24px;
-    padding: 4px 0;
+    padding-top: 4px;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    transition: all 300ms;
+}
 
+.nav__link:hover {
+    color: #6415ff;
+}
+
+.nav__link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #6415ff;
+    transition: all 300ms;
+    opacity: 0;
+
+}
+
+.nav__link:hover:after {
+    opacity: 1;
 }
 
 .login {
     margin: 0 24px 0 48px;
 }
+
 
 .nav__link--primary {
     margin: 2px 0 0 0;
@@ -129,7 +153,5 @@ nav {
     color: white;
     line-height: 1.5;
     border: none;
-    width: auto;
-
-
+    width: auto
 }
