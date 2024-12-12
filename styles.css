@@ -968,6 +968,10 @@ footer {
     line-height: 1.5;
 }
 
+.footer__column--link:nth-child(2) {
+    margin-top: 24px;
+}
+
 .footer__column--link {
     color: #f7fafc;
     font-size: 14px;
@@ -978,4 +982,10 @@ footer {
     cursor: pointer;
 }
 
+.footer__divider {
+    width: 100%;
+    height: 2px;
+    margin: 64px 0;
+    background: rgb(116, 44, 255);
+}
 
