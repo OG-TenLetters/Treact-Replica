@@ -1163,7 +1163,7 @@ footer {
 
 .footer__bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -1505,9 +1505,19 @@ footer {
     flex-direction: column;
   }
 
+
   .footer__column {
     width: calc(100% / 4);
     text-align: ;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer__copyright {
+    margin: 28px 0;
   }
 
 }
@@ -1519,4 +1529,35 @@ footer {
   .container {
     padding: 80px 0;
   }
+
+  .feature__row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature__text {
+    margin: 0;
+    padding-top: 18px;
+  }
+
+  .start__title {
+    font-size: 20px;
+  }
+  
+  .start__buttons {
+    flex-direction: column;
+  }
+
+  .start__button:nth-child(1) {
+    margin: 0;
+    margin-bottom: 12px;
+
+  }
+
+  .start__button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
 }
