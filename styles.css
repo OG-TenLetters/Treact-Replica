@@ -14,9 +14,7 @@ Elememts
 
 */
 
-html
- {
-  max-width: 100vw;
+body {
   overflow-x: hidden;
 }
 
@@ -1192,20 +1190,19 @@ FOOTER
 footer {
   padding: 96px 32px;
   background-color: rgb(100, 21, 255);
-  margin-bottom: -32px;
+  /* margin-bottom: -32px; */
   position: relative;
   overflow: hidden;
 }
 
 .footer__columns {
-  margin-top: -48px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .footer__column {
-  margin-top: 48px;
+  margin-top: 24px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
